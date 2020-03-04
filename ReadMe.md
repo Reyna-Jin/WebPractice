@@ -1,6 +1,7 @@
 README
 ===============
-在线直播课程实战[千千音乐](http://music.taihe.com/)网页制作
+在线直播课程实战[千千音乐](http://music.taihe.com/)网页制作:smiley:
+
 【注：此为针对PC端的网页制作（非响应式）】
 
 ***
