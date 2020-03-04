@@ -30,10 +30,10 @@ README
 * `<ul><li></li></ul>`排列整齐;页面布局即可实现并列排放
 导航栏nav包含`<ul>` `<li>`
 
-![li.png](li.png)
+![li.png](https://github.com/roytaJ/WebPractice/tree/master/images/li.png)
 
 * footer举例
-![footer.png](footer.png)
+![footer.png](https://github.com/roytaJ/WebPractice/tree/master/images/footer.png)
 
 ---
 
@@ -64,7 +64,7 @@ README
 ## 标签选择器
 为页面中某一类标签指定统一的CSS样式
 
-![css.png](css.png)
+![css.png](https://github.com/roytaJ/WebPractice/tree/master/images/css.png)
 ```html
 <style>
 	/*style标签里面写样式*/
@@ -231,11 +231,11 @@ right|元素向右浮动
 
 * position
 
-![position](position.png)
+![position](https://github.com/roytaJ/WebPractice/tree/master/images/position.png)
 
 * 边偏移
 
-![pianyi](pianyi.png)
+![pianyi](https://github.com/roytaJ/WebPractice/tree/master/images/pianyi.png)
 布局使用
 
 **子绝父相**
@@ -294,6 +294,4 @@ div {
         }
 ```
 
-只有定位才用到top，right
-github、gitee（码云）查找项目实战
-黑马程序员官网看
+THE END. :heartpulse:
