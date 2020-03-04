@@ -1,0 +1,604 @@
+b,body,button,dd,dfn,div,dl,dt,em,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,hr,i,input,legend,li,nav,ol,p,pre,section,strong,td,textarea,th,ul,var {
+    margin: 0;
+    padding: 0;
+    /* 斜体字体改为正常 */
+    font-style: normal;
+    /* 字体不加粗 */
+    font-weight: 400;
+    -webkit-box-sizing: border-box;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+  }
+  input:focus,
+  textarea:focus {
+      /* 去掉表单的蓝色边框 */
+    outline: none;
+  }
+  body {
+    font-size: 14px;
+    font-family: PingFangSC-Regular, poppin, Tahoma, Arial, sans-serif;
+    color: #333;
+    /* 字间距 */
+    letter-spacing: 1px;
+    line-height: 22px;
+  }
+  a {
+      /* 链接取消了下划线 */
+    text-decoration: none;
+  }
+  a,
+  a:hover {
+    color: #333;
+  }
+  img {
+    border: 0;
+  }
+  ul li {
+      /* 去掉列表样式 */
+    list-style: none;
+  }
+  input,
+  textarea {
+    background: none;
+    border: none;
+  }
+  
+  /* 网站的头部分 */
+  header {
+      height: 135px;
+ 
+  }
+  .section-inner {
+      width: 1200px;
+      height: 95px;
+      margin: 0 auto;
+  }
+  /* 网站logo部分 */
+  .logo {
+      float: left;
+      width: 127px;
+      height: 41px;
+      margin-top: 25px;
+
+  }
+  .logo img {
+      width: 100%;
+      height: 100%;
+  }
+  /* nav主导航栏 */
+  .nav {
+      float: left;
+      margin-top: 35px;
+      margin-left: 80px;
+  }
+  .nav a {
+      font-size: 16px;
+      margin-right: 35px;
+      color: #848484;
+  }
+  .nav a:hover {
+    color: #000;
+  }
+  .nav .on {
+      color: #000;
+  }
+  /* 搜索模块 */
+  .search-box {
+      /* 父亲相对定位 */
+      position: relative;
+      float: left;
+      margin-top: 30px;
+  }
+  .search-box  input {
+    width: 300px;
+    height: 34px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding-left: 15px;
+    font-size: 15px;
+  }
+  .search-box i {
+      /* 孩子绝对定位 */
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 28px!important;
+      color: #dd4823;
+      /* 鼠标变成小手 */
+      cursor: pointer;
+  }
+  /* placeholder 专门修改颜色 */
+  .search-box input::placeholder {
+    color: #848484;
+  }
+  /* login登录盒子 */
+  .login {
+      /* 溢出的部分隐藏 */
+      overflow: hidden;
+      /* 强制文字一行内显示 不允许换行 */
+      white-space: nowrap;
+      /* 溢出的文字用省略号 ellipsis代替 */
+      text-overflow: ellipsis;
+      float: left;
+      width: 150px;
+      margin: 25px 0 0 20px;
+  }
+  .login-img {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      /* 因为图片默认和文字的基线对齐，加上
+      vertical-align: middle 可以让文字和图片垂直居中 */
+      vertical-align: middle;
+  }
+  .login-img img {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+  }
+  /* 侧导航栏 */
+  .sub-nav {
+      height: 40px;
+      line-height: 40px;
+      background-color: #fafafa;
+      text-align: center;
+  }
+  .sub-nav a {
+      font-size: 16px;
+      margin: 0 45px;
+  }
+  .sub-nav a:hover {
+    color: #e13228;
+  }
+  .sub-nav .on {
+      color: #e13228;
+  }
+  /* 兄弟三个的父亲  */
+  .mod-main {
+      position: relative;
+      width: 1200px;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
+  /* 热门歌单盒子 */
+  .mod-hot-songlist {
+      width: 790px;
+      height: 565px;
+  }
+
+/* 公共的标题部分 */
+.mod-title {
+  height: 38px;
+  /* 行高=高 垂直居中 */
+  line-height: 38px;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.mod-title .more {
+  /* 不要加浮动 */
+  font-size: 14px;
+  color: #989898;
+  margin-left: 10px;
+}
+.mod-title .btns {
+  /* 右浮动 */
+  float: right;
+}
+.mod-title .btns i {
+  font-size: 23px;
+  color: #989898;
+  /* 放上去鼠标变小手 */
+  cursor: pointer;
+}
+.container-hot-songlist {
+  /* 宽度比父盒子大一些 */
+  width: 820px;
+}
+.container-hot-songlist li {
+  /* 向左浮动,  */
+  float: left;
+  width: 175px;
+  height: 204px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+.container-hot-songlist li a {
+  /* 保证我们的a 和li一样大 */
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.container-hot-songlist li a:hover img {
+  transform: scale(1.1);
+}
+.img-box {
+  position: relative;
+  width: 175px;
+  height: 175px;
+  /* 不能切a,否则下面会多出来 */
+  /* 所以图片一定要包一个盒子 */
+  overflow: hidden;
+}
+.img-box .play {
+  /* 刚开始这个按钮是看不见的 opactiy透明度 */
+  opacity: 0;
+  /* 定位的盒子不能通过margin: 0 auto水平居中 */
+  /* 子绝父相 */
+  /* 让定位的盒子水平垂直居中 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 因为字体图标本身为40px */
+  /* margin-left: -20px;
+  margin-top: -20px; */
+  transform: translate(-50%, -50%);
+
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  /* 背景是黑色半透明的盒子 */
+  background: rgba(0,0,0, .4);
+     /* 谁做动画给谁加 淡入淡出 */
+    transition: all .5s;
+
+}
+.container-hot-songlist li a:hover .play {
+  opacity: 1;
+  /* 原 .play 的-50%效果仍想要 */
+  transform: translate(-50%, -50%)  scale(1.2);
+}
+.img-box .play i {
+  color: #fff;
+  font-size: 14px;
+}
+.img-box img {
+  width: 100%;
+  /* 谁做动画给谁加 */
+  transition: all .3s;
+}
+.container-hot-songlist li h3 {
+  font-size: 14px;
+  transition: all .3s;
+  margin-top: 10px;
+}
+.container-hot-songlist li a:hover h3 {
+  /* 加粗 */
+  font-weight: 700;
+}
+
+/* -------------------------------------------------------- */
+/* 分类听歌模块 */
+.mod-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 291px;
+
+}
+
+.mod-tag-box {
+  /* 比父亲（分类听歌大模块）大一些，才能保证ul li能够统一 */
+  width: 370px;
+
+}
+.mod-tag-box a {
+  display: block;
+  width: 106px;
+  height: 42px;
+  border: 1px solid #ededed;
+  /* 矩形变椭圆形 短边的一半 */
+  border-radius: 21px;
+  text-align: center;
+  line-height: 42px;
+  /* 谁做过渡给谁加 加阴影过渡 */
+  transition: all .2s;
+}
+.mod-tag-box a:hover {
+  /* 鼠标经过加阴影 在F12右击模拟鼠标经过可看源代码 */
+  /* 给a加阴影，而非h3 在圆角周围加阴影，而不是矩形周围 */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+.mod-tag-box h3 {
+  /* 加浮动 3个“情歌”才能到一行里，否则竖直排列 */
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+/* ---------------------------------------------- */
+/* 推荐电台模块 */
+.mod-fm {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 350px;
+  height: 253px;
+}
+.mod-fm-box {
+  width: 420px;
+}
+.mod-fm-box li {
+  float: left;
+  width: 50px;
+  height: 95px;
+
+  margin-right: 45px;
+}
+.mod-fm-box li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.mod-fm-box li .icons {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #e31516;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+
+}
+.mod-fm-box li .icons i {
+   color: #fff;
+   font-size: 20px;
+}
+.mod-fm-box li h4{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  /* 强制一行显示 */
+  white-space: nowrap;
+}
+
+.mod-rank {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.mod-rank-box {
+  /* 需要比 .mod-rank 多出30px才正好  父盒子足够宽，第三个盒子不会掉下来*/
+  width: 1230px;
+  height: 544px;
+}
+.mod-rank-box ul li {
+  float: left;
+  width: 380px;
+  height: 544px;
+  margin-right: 30px;
+
+}
+.mod-rank-box ul li h2 {
+  height: 66px;
+  line-height: 66px;
+  font-size: 22px;
+  font-weight: 700;
+  padding-left: 20px;
+  /* color: #5b9400; */
+  /* background-color: #eef4e5; */
+}
+.mod-rank-box ul li h2 i {
+  color:white;
+  font-size: 20px;
+}
+.rank-news {
+  border: 1px solid #5b9400;
+}
+.rank-news h2 {
+  background-color: #eef4e5;
+  color:#5b9600;
+}
+.rank-hot {
+  border: 1px solid #db5800;
+  /* color:#db5800; */
+}
+.rank-hot h2 {
+  background-color:rgba(219,88,0,.1);
+  color:#db5800;
+}
+.rank-networld {
+  border: 1px solid #21bfa6;
+  /* color:#21bfa6; */
+}
+.rank-networld h2 {
+  background-color:rgba(33,191,166,.1);
+  color:#21bfa6;
+}
+.arrow-news {
+  float: right;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 20px;
+  /* color:#5b9600; */
+  background-color: #5b9600;
+  text-align: center;
+}
+.arrow-hot {
+  float: right;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 20px;
+  background-color: #db5800;
+  text-align: center;
+}
+.arrow-networld {
+  float: right;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 20px;
+  background-color: #21bfa6;
+  text-align: center;
+}
+.rank-news .arrow i {
+  color: #fff;
+  font-size: 20px;
+  
+}
+.rank-list-item {
+  height: 68px;
+  padding: 10px 10px 10px 20px;
+
+}
+.rank-list-item:hover {
+  background-color: #fafafa;
+}
+.rank-list-item span {
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+  color: #5b9400;
+}
+.rank-list-item a {
+  float: left;
+  margin-left: 10px;
+}
+.rank-list-item a img {
+  width: 50px;
+}
+.rank-list-item .info {
+  float: left;
+  margin-left: 10px;
+}
+.rank-more {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.rank-list-item-hot {
+  height: 68px;
+  padding: 10px 10px 10px 20px;
+
+}
+.rank-list-item-hot:hover {
+  background-color: #fafafa;
+}
+.rank-list-item-hot span {
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+  color: #db5800;
+}
+.rank-list-item-hot a {
+  float: left;
+  margin-left: 10px;
+}
+.rank-list-item-hot a img {
+  width: 50px;
+}
+.rank-list-item-hot .info {
+  float: left;
+  margin-left: 10px;
+}
+
+.rank-list-item-nw {
+  height: 68px;
+  padding: 10px 10px 10px 20px;
+
+}
+.rank-list-item-nw:hover {
+  background-color: #fafafa;
+}
+.rank-list-item-nw span {
+  float: left;
+  font-size: 18px;
+  font-weight: 700;
+  color: #21bfa6;
+}
+.rank-list-item-nw a {
+  float: left;
+  margin-left: 10px;
+}
+.rank-list-item-nw a img {
+  width: 50px;
+}
+.rank-list-item-nw .info {
+  float: left;
+  margin-left: 10px;
+}
+/* -------------------------------- */
+/* 底部模块 */
+footer {
+  height: 433px;
+  margin-top: 50px;
+  background-color: #2c2c2c;
+}
+.footer-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-inner-top {
+  padding-top: 60px;
+  width: 1300px;
+  height: 200px;
+}
+.footer-inner-top .mod {
+  float: left;
+  width: 425px;
+
+}
+.footer-inner-top .mod h2 {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.download ul {
+  margin-left: -25px;
+}
+.download ul li {
+  color: #929292;
+  float: left;
+  width: 92px;
+  height: 73px;
+  text-align: center;
+}
+.download ul li i {
+  font-size: 40px;
+  color: #929292;
+}
+.download ul li span {
+  display: block;
+  margin-top:15px;
+}
+.footer-inner-bottom {
+  margin-top: 100px;
+  text-align: center;
+  color:#929292;
+  line-height: 28.6px;
+  font-size: 14px;
+}
+.about ul li span {
+  display: block;
+  margin-top:10px;
+  margin-left: 25px;
+  /* font-size: 40px; */
+  color: #929292;
+}
+
+/* 轮播图模块 */
+
+.focus {
+  width: 1200px;
+  margin: 0 auto 40px;
+}
+.focus-container {
+  height: 225px;
+ 
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 14px;
+
+}
+.swiper-slide img {
+  width: 175px;
+}
